@@ -12,5 +12,17 @@ interface RequisicoesPostagem {
     @RequestLine("GET /posts/{id}")
     fun getPostagem(@Param("id") id: Int): Postagem?
 
+    //exemplo GET que traz uma lista
+    @RequestLine("GET /posts")
+    fun getPostagens(): List<Postagem>
+
+    @RequestLine("POST /posts")
+    fun criarPostagem(postagem: Postagem)
+
+    @RequestLine("DELETE /posts/{id}")
+    fun deletePostagem(@Param("id") id: Int?)
+
+
+
 
 }

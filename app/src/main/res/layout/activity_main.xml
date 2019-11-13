@@ -23,6 +23,23 @@
     android:id="@+id/tvConteudo"
     app:layout_constraintTop_toBottomOf="@+id/tvTitulo"/>
 
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/editNovoTitulo"
+              app:layout_constraintTop_toBottomOf="@+id/tvConteudo"
+              android:hint="Titulo de um novo post!!"/>
+
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/editNovoCorpo"
+              app:layout_constraintTop_toBottomOf="@+id/editNovoTitulo"
+              android:hint="Corpo do novo post"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Criar novo post"
+            android:onClick="cadastrar"
+            app:layout_constraintTop_toBottomOf="@+id/editNovoCorpo"/>
+
+
+
 
     <!--<TextView-->
             <!--android:layout_width="wrap_content"-->
